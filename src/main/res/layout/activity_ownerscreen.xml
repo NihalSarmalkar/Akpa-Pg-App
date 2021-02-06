@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B7ECF3"
+    tools:context=".Ownerscreen">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Advertisement Form"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Apka Pg"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/ownerIDView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Text"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <RelativeLayout
+        android:layout_width="410dp"
+        android:layout_height="615dp"
+        android:background="#B7ECF3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ownerIDView"
+        tools:context=".MainActivity">
+        <EditText
+            android:id="@+id/imageNameET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="1.Enter name of Pg/Hostel : "
+            android:maxLength="25"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorHint="@android:color/holo_green_dark" />
+
+        <EditText
+            android:id="@+id/imageNameET1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageNameET"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="2.Enter Pg/Hostel phone number : "
+            android:maxLength="25"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorHint="@android:color/holo_green_dark" />
+
+        <EditText
+            android:id="@+id/imageNameET2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageNameET1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="3.Enter price of room :"
+            android:maxLength="25"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorHint="@android:color/holo_green_dark" />
+
+        <EditText
+            android:id="@+id/imageNameET3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageNameET2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="4.Enter Facilities available in Pg/Hostel :"
+            android:maxLength="25"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorHint="@android:color/holo_green_dark" />
+
+        <EditText
+            android:id="@+id/imageNameET4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageNameET3"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:hint="5.Enter Pg/Hostel address"
+            android:maxLength="25"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorHint="@android:color/holo_green_dark" />
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_below="@+id/imageNameET4"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginRight="5dp"
+            android:onClick="chooseImage"
+            android:scaleType="centerCrop"
+            android:src="@drawable/addphoto" />
+
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/holo_green_dark"
+            android:onClick="storeImage"
+            android:text="Save image"
+            android:textColor="@android:color/white" />
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
